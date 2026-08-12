@@ -67,11 +67,11 @@ AI / agentic systems engineer and full-stack operator. Ex-Information Security C
 ### Anvil — AI Coding-Tool Security Control Plane
 **Security control plane for the AI coding tools running on a dev fleet.** &nbsp;·&nbsp; `WIP`
 
-- Detects and audits seven agent families — Claude Code, Cursor, Copilot, Cline, Windsurf, Zed, MCP.
-- Rule findings map to SOC 2 controls (CC6.1, CC7.1…) and carry a one-command remediation.
-- Offline-first free tier: packs bundled into the binary, no account, no network — macOS, Linux, Windows.
+- Audits seven agent families — Claude Code, Cursor, Copilot, Cline, Windsurf, Zed, MCP — across macOS, Linux and Windows.
+- 16 Ed25519-signed packs / 312 checks that discriminate with zero false negatives and zero false positives.
+- Device signing keys are derived from a master secret, never stored — the database holds only a digest, so a dump cannot forge an agent.
 
-`Go` `Next.js` `React` `Radix UI` `Supabase` `Sentry` `pnpm workspaces`
+`Go` `Next.js` `React` `Supabase / Postgres` `Deno Edge Functions` `Ed25519` `pnpm workspaces`
 
 ---
 
